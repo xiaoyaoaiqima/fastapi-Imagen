@@ -127,27 +127,11 @@ echo "AI 总结指令" >> "$OUTPUT_FILE"
 echo "----------------------------------------" >> "$OUTPUT_FILE"
 cat >> "$OUTPUT_FILE" << 'EOF'
 
-根据上面的commit记录给我生成一个github风格的，没有emoji的，格式都用 1、这种的release note。区分服务。
-
 服务分类说明：
 - raap-service-ag、raap-service-generation-experts → 生成和对齐治理中心服务
 - raap-service-orchestrator → 工作流编排调度中心
 - raap-admin-frontend → 前端
 - raap-service-keyword-corpus → 关键词和语料系统
-
-输出格式示例：
-## 关键词和语料系统
-1、xxx
-
-## 生成和对齐治理中心服务
-1、xxx
-2、xxx
-
-## 工作流编排调度中心
-1、xxx
-
-## 前端
-1、xxx
 
 EOF
 
